@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>오리온</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/brand.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="orion" class="orion">
+                </a>
+            </div>
+            <nav id="topmenu">
+                <ul>
+                    <li><a href="#" onclick="return false;">오리온</a></li>
+                    <li><a href="brand.html" class="active">브랜드</a></li>
+                    <li><a href="#" onclick="return false;">닥터유</a></li>
+                    <li><a href="#" onclick="return false;">마켓오</a></li>
+                    <li><a href="cs.html">고객센터</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="contents">
+            <nav id="submenu">
+                <ul>
+                    <li><a href="#" onclick="return false;" class="sub"><span>파이</span></a></li>
+                    <li><a href="#" onclick="return false;" class="sub"><span>스낵</span></a></li>
+                    <li><a href="#" onclick="return false;" class="sub"><span>비스킷</span></a></li>
+                    <li><a href="#" onclick="return false;" class="sub"><span>껌</span></a></li>
+                    <li><a href="#" onclick="return false;" class="sub"><span>사탕</span></a></li>
+                    <li><a href="#" onclick="return false;" class="sub"><span>초콜릿</span></a></li>
+                    <li><a href="#" onclick="return false;" class="sub"><span>CF</span></a></li>
+                </ul>
+            </nav>
+            <div id="slideshow">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="youtube_box">
+                                <iframe width="850px" height="480px" src="https://www.youtube.com/embed/rZVE_mVf2qQ?autoplay=1&amp;mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="youtube_box">
+                                <iframe width="850px" height="480px" src="https://www.youtube.com/embed/col-Bs86A5E?autoplay=1&amp;mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="youtube_box">
+                                <iframe width="850px" height="480px" src="https://www.youtube.com/embed/MFh0byslj9c?autoplay=1&amp;mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+        <div id="serch">
+            <h1>브랜드 검색 <span>Search</span></h1>
+            <form action="">
+                <select id="srch">
+                    <option value="all">전체</option>
+                    <option value="pie">파이</option>
+                    <option value="snack">스낵</option>
+                    <option value="biscuit">비스킷</option>
+                    <option value="gum">껌</option>
+                    <option value="candy">사탕</option>
+                    <option value="chocolate">초콜릿</option>
+                </select>
+                <input type="text" name="search_brand" id="srchTxt" placeholder="제품검색">
+                <button type="submit">검색</button>
+            </form>
+        </div>
+        <div id="product">
+            <div #swiperRef="" class="swiper mySwiper2">
+                <div class="swiper-wrapper" id="swiper-wrapper_brand">
+                    <div class="swiper-slide">
+                        <a href="#" onclick="return false;"><img src="images/brand/snack1.jpg" alt="snack1"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="return false;"><img src="images/brand/snack2.jpg" alt="snack2"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="return false;"><img src="images/brand/snack3.jpg" alt="snack3"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="return false;"><img src="images/brand/snack4.jpg" alt="snack4"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" onclick="return false;"><img src="images/brand/snack5.jpg" alt="snack5"></a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <footer>
+            <div id="footer_box">
+                <ul>
+                    <li><a href="http://www.orionworld.com/snak/footer/pop_legal_notice.asp" target="_blank" title="법적고지" onclick="footerPop(1); return false;">법적고지</a></li>
+                    <li><a href="http://www.orionworld.com/snak/members/pop_privacy.asp" target="_blank" title="개인정보취급방침" onclick="footerPop(2); return false;">개인정보취급방침</a></li>
+                    <li><a href="http://www.orionworld.com/snak/footer/pop_forbid_colleting_email.asp" target="_blank" title="이메일주소수집거부" onclick="footerPop(3); return false;">이메일주소수집거부</a></li>
+                </ul>
+                <p>서울시 용산구 백범로 90다길 13</p>
+                <p>전화번호: 02-071-6000  /  상담실: 080-023-5700 (수신자 부담)  /  제품 구입 문의: 02-710-6083</p>
+            </div>
+            <div id="sns_box">
+                <a href="https://www.youtube.com/channel/UCzK9rR-swgi7f2O_Q0vStjw/featured" target="_blank" title="youtube"><img src="images/main/youtube.svg" alt="youtube"></a>
+                <a href="https://www.instagram.com/orion_world" target="_blank" title="instagram"><img src="images/main/instagram.svg" alt="instagram"></a>
+                <a href="https://www.facebook.com/onlyorion" target="_blank" title="facebook"><img src="images/main/facebook.svg" alt="facebook"></a>
+                <a href="http://blog.naver.com/orionblog" target="_blank" title="blog"><img src="images/main/blog.png" alt="blog"></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/brand.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>

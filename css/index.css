@@ -1,0 +1,392 @@
+/* 슬라이드쇼 */
+#slideshow {
+    clear: both;
+    width: 100%;
+    height: 700px;
+}
+#slideshow .swiper {
+    width: 100%;
+    height: 100%;
+}
+#slideshow .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#slideshow .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.4);
+}
+#slideshow .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #fff;
+}
+.filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #534741;
+    opacity: 0.4;
+    z-index: 5;
+}
+#maintxt1, #maintxt2, #maintxt3 {
+    font-family: 'TmoneyRoundWindExtraBold';
+    width: 50%;
+    height: 10%;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 2em;
+    background-color: transparent;
+    z-index: 10;
+    text-align: center;
+    color: #fff;
+}
+#maintxt1 {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+#maintxt2 {
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+}
+#maintxt3 {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+/* 브랜드 */
+#brand {
+    width: 100%;
+    height: 620px;
+    padding-top: 80px;
+    position: relative;
+}
+.brandTxt {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'TmoneyRoundWindExtraBold';
+    position: relative;
+    color: #D1D3D4;
+}
+.brandTxt h1::before {
+    width: 50px;
+    height: 50px;
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 350px;
+    display: block;
+    border-radius: 50%;
+    background-image: url(../images/favicon.svg);
+}
+#brand .swiper {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto 0;
+}
+#brand .swiper-slide {
+    width: 20% !important;
+    height: 300px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#brand .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#brand .swiper-slide img:hover {
+    border: 2px solid #ed1b29;
+}
+
+#brand .swiper-button-next, #brand .swiper-button-prev {
+    color: #ed1b29;
+}
+#brand_button {
+    position: absolute;
+    bottom: 50px;
+    left: 636.4px;
+}
+#brand_button a{
+    font-family: 'MinSans-Light';
+    width: 300px;
+    height: 60px;
+    border: 1px solid #ed1b29;
+    color: #ed1b29;
+    font-size: 24px;
+    border-radius: 30px;
+    padding: 10px 50px;
+    z-index: 10;
+}
+#brand_button a:hover {
+    color: #fff;
+    background-color: #ed1b29;
+}
+
+/* company */
+#company {
+    width: 100%;
+    height: 830px;
+    padding-top: 80px;
+    position: relative;
+    background-color: #f4f4f4;
+}
+#company_img {
+    width: 80%;
+    height: 600px;
+    position: absolute;
+    top: 80px;
+    left: 10%;
+    overflow: hidden;
+}
+#company_img img {
+    width: 100%;
+    height: 100%;
+}
+#company_text {
+    width: 100%;
+    height: 1200px;
+    display: block;
+    padding: 40px 40px;
+    line-height: 2;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.6s ease-in-out;
+    z-index: 10;
+}
+#company_text h1 {
+    font-size: 72px;
+}
+#company_text p {
+    font-size: 30px;
+    padding-left: 20px;
+}
+#company_text p:last-child {
+    margin-top: 300px;
+    font-size: 30px;
+}
+#company_img:hover > #company_text {
+    display: block;
+    transform: translateY(-600px);
+}
+#company_button {
+    position: absolute;
+    bottom: 50px;
+    left: 625px;
+}
+#company_button a{
+    font-family: 'MinSans-Light';
+    width: 300px;
+    height: 60px;
+    border: 1px solid #ed1b29;
+    color: #ed1b29;
+    font-size: 24px;
+    border-radius: 30px;
+    padding: 10px 50px;
+    z-index: 10;
+}
+#company_button a:hover {
+    color: #fff;
+    background-color: #ed1b29;
+}
+
+
+/* 닥터유 마켓오 */
+#brands {
+    width: 100%;
+    height: 560px;
+    padding-top: 80px;
+    position: relative;
+    font-family: 'TmoneyRoundWindExtraBold';
+}
+#doctor {
+    width: 37%;
+    height: 480px;
+    position: absolute;
+    top: 80px;
+    left: 12%;
+    overflow: hidden;
+}
+#doctor img {
+    width: 100%;
+    height: 100%;
+}
+#doctor_text {
+    width: 100%;
+    height: 480px;
+    display: block;
+    line-height: 2;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    line-height: 480px;
+    transition: all 0.6s ease-in-out;
+    z-index: 10;
+}
+#doctor_text h1 {
+    font-size: 72px;
+}
+#doctor a:hover > #doctor_text {
+    display: block;
+    transform: translateY(-100%);
+}
+#market {
+    width: 37%;
+    height: 480px;
+    position: absolute;
+    top: 80px;
+    right: 12%;
+    overflow: hidden;
+}
+#market img {
+    width: 100%;
+    height: 100%;
+}
+#market_text {
+    width: 100%;
+    height: 480px;
+    display: block;
+    line-height: 2;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    line-height: 480px;
+    transition: all 0.6s ease-in-out;
+    z-index: 10;
+}
+#market_text h1 {
+    font-size: 72px;
+}
+#market a:hover > #market_text {
+    display: block;
+    transform: translateY(-100%);
+}
+
+/* 기타 */
+#etc {
+    width: 100%;
+    height: 300px;
+    background-color: #555555;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    position: relative;
+}
+#qna, #cs, #kko {
+    height: 100%;
+    float: left;
+}
+#qna {
+    width: 50%;
+    height: 100%;
+    padding-top: 30px;
+    padding-left: 40px;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+#qna h1 {
+    font-size: 2em;
+    color: #fff;
+}
+#qna ul {
+    list-style: circle;
+    margin-left: 50px;
+    color: rgba(255, 255, 255, 0.6);
+}
+#qna li {
+    margin-top: 30px;
+    font-size: 1em;
+}
+#qna li a {
+    color: rgba(255, 255, 255, 0.6);
+}
+#cs {
+    width: 40%;
+    height: 100%;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    background-image: url(../images/main/cs2.png);
+    background-color: #555555;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#cs a {
+    width: 100%;
+    height: 100%;
+}
+#cs_text {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+#cs_text h1 {
+    padding-left: 20px;
+    font-size: 2em;
+    color: #fff;
+}
+#cs_text p {
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 2;
+    padding-left: 30px;
+}
+#cs_text p:last-child {
+    font-size: 1.4em;
+}
+#kko {
+    width: 10%;
+    height: 100%;
+    position: relative;
+}
+#kakaolink, #kakaoch {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+#kakaolink {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#kakaoch {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}
+#kakaolink img, #kakaoch_img {
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+}
+#kakaoimg_box {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    z-index: 20;
+    border: 1px solid #222;
+}

@@ -1,0 +1,342 @@
+/* csMain */
+#csMain {
+    width: 100%;
+    height: 500px;
+    background-color: beige;
+    position: relative;
+    overflow: hidden;
+    background-image: url("../images/cs/csMain.png");
+}
+.mainfil {
+    width: 100%;
+    height: 500px;
+    z-index: 2;
+    background-color: #534741;
+    opacity: 0.4;
+}
+#submenu {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition-duration: 200ms;
+}
+#submenu > ul {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+#submenu > ul > li {
+    display: table-cell;
+    padding: 0 10px;
+}
+#submenu > ul > li > a{
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 16px;
+    color: #222;
+    position: relative;
+    text-align: center;
+}
+#submenu > ul > li > a > span {
+    position: relative;
+}
+#submenu > ul > li > a:hover > span {
+    display: inline-block;
+    color: #ed1b29;
+}
+#submenu > ul > li > a > span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-bottom: solid 2px #ed1b29;
+    transform: translateX(-50%);
+    transition: width 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+#submenu > ul > li > a:hover > span::before {
+    width: 100%;
+}
+.mainTxt {
+    width: 46%;
+    height: 240px;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border: 2px solid #fff;
+    z-index: 10;
+    position: absolute;
+    top: 500px;
+    left: 27%;
+}
+.mainTxt h1 {
+    font-size: 46px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.mainTxt p {
+    font-size: 22px;
+    line-height: 1.5;
+}
+.mainTxt p span {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+/* VOC */
+.voc {
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+.transaction {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+.transaction h1 {
+    margin-top: 30px;
+}
+.transaction h1::before {
+    width: 22px;
+    height: 22px;
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 560px;
+    display: block;
+    border-radius: 50%;
+    background-image: url(../images/favicon.svg);
+}
+.transTxt {
+    width: 80%;
+    height: 140px;
+    margin: 40px auto 0;
+}
+.trans1, .trans2, .trans3, .trans4 {
+    width: 25%;
+    height: 100%;
+    margin-top: 50px;
+    padding: 0 10px 0px 20px;
+    text-align: left;
+    float: left;
+    font-size: 20px;
+    line-height: 1.75;
+    position: relative;
+    border-right: 1px solid rgba(255, 0, 0, 0.6);
+}
+.trans4 {
+    border: none;
+}
+.trans1::before,
+.trans2::before,
+.trans3::before,
+.trans4::before {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: -45px;
+    left: 10px;
+    display: block;
+    border: 2px solid #222;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.trans1::before {
+    content: '1';
+}
+.trans2::before {
+    content: '2';
+}
+.trans3::before {
+    content: '3';
+}
+.trans4::before {
+    content: '4';
+}
+/* contents */
+.contents {
+    width: 100%;
+    height: 800px;
+    margin-bottom: 5px;
+    position: relative;
+    transition: 200ms;
+}
+.qna {
+    width: 100%;
+    height: 400px;
+    transition: 200ms;
+}
+.qna-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
+}
+.qna-top h1::before {
+    width: 22px;
+    height: 22px;
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 590px;
+    display: block;
+    border-radius: 50%;
+    background-image: url(../images/favicon.svg);
+}
+.qna-top a {
+    position: absolute;
+    bottom: 10px;
+    right: 20%;
+    color: rgba(0, 0, 0, 0.6);
+}
+.qna-bottom {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    left: 0;
+    transition: 200ms;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qna-ul {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+.qna-q {
+    margin-top: 40px;
+    padding-left: 50px;
+    cursor: pointer;
+    position: relative;
+}
+.qna-q::before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 37px;
+    height: 16px;
+    content: "";
+    background-image: url(../images/cs/btn_q.gif);
+}
+.qna-a {
+    cursor: default;
+    width: 720px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px 0 10px 60px;
+    margin-top: 10px;
+    line-height: 1.2;
+}
+.qna-a::before {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 37px;
+    height: 16px;
+    content: "";
+    background-image: url(../images/cs/btn_a.gif);
+}
+.swiper-button-prev, .swiper-button-next {
+    color: #ed1b29;
+}
+.swiper-button-prev {
+    position: absolute;
+    left: 15%;
+}
+.swiper-button-next {
+    position: absolute;
+    right: 15%;
+}
+.go-cs {
+    width: 100%;
+    height: 400px;
+    background-color: #f4f4f4;;
+}
+.kakao, .homepage, .call {
+    width: 480px;
+    height: 300px;
+    margin-top: 50px;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+.kakao {
+    background-image: url(../images/cs/kakao.png);
+}
+.homepage {
+    background-image: url(../images/cs/homepage.png);
+}
+.call {
+    background-image: url(../images/cs/phone.png);
+}
+.kakao a, .homepage a {
+    z-index: 10;
+}
+.csfilter {
+    width: 480px;
+    height: 300px;
+    background-color: #534741;
+    opacity: 0.4;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.csTxt {
+    width: 480px;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    color: #fff;
+    z-index: 5;
+    font-size: 1.2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.callTxt {
+    width: 480px;
+    height: 300px;
+    z-index: 5;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.callTxt h1 {
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
